@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_draws"
+            android:icon="@drawable/all_raffles_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/all_draws"
+            tools:targetApi="o"/>
+
+        <item
+            android:id="@+id/nav_beginners"
+            android:icon="@drawable/beginners_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/beginners"
+            tools:targetApi="o" />
+
+        <item
+            android:id="@+id/nav_free_join"
+            android:icon="@drawable/free_join_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/free_join"
+            tools:targetApi="o"/>
+
+        <item
+            android:id="@+id/nav_get_a_car"
+            android:icon="@drawable/get_a_car_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/get_a_car"
+            tools:targetApi="o" />
+
+        <item
+            android:id="@+id/nav_get_phone_tablet"
+            android:icon="@drawable/get_a_phone_tablet_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/get_a_phone_tablet"
+            tools:targetApi="o"/>
+
+        <item
+            android:id="@+id/nav_get_a_holiday"
+            android:icon="@drawable/get_a_holiday_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/get_a_holiday"
+            tools:targetApi="o"/>
+
+        <item
+            android:id="@+id/nav_follows"
+            android:icon="@drawable/follows_icon"
+            android:iconTint="@color/secondary_color"
+            android:title="@string/follows"
+            tools:targetApi="o"/>
+
+    </group>
+</menu>

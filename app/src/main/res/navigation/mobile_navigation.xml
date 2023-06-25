@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_all_draws">
+
+    <fragment
+        android:id="@+id/nav_all_draws"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/all_draws"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue=" " />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_beginners"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/beginners"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue="yeni-baslayanlar" />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_free_join"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/free_join"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue="bedava-katilim" />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_get_a_car"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/get_a_car"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue="araba-kazan" />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_get_phone_tablet"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/get_a_phone_tablet"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue="telefon-tablet-kazan" />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_get_a_holiday"
+        android:name="com.kimkazandi.ui.groups.SharedGroupFragment"
+        android:label="@string/get_a_holiday"
+        tools:layout="@layout/fragment_group_detail" >
+        <argument
+            android:name="groupId"
+            app:argType="string"
+            android:defaultValue="tatil-kazan" />
+        <action
+            android:id="@+id/action_group_detail_fragment_to_raffle_detail_fragment"
+            app:destination="@id/raffleCardDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_follows"
+        android:name="com.kimkazandi.ui.follows.FollowsFragment"
+        android:label="@string/follows"
+        tools:layout="@layout/fragment_follows" >
+        <action
+            android:id="@+id/action_nav_follows_to_raffleCardDetailFragment"
+            app:destination="@id/raffleCardDetailFragment" />
+        <argument
+            android:name="groupId"
+            android:defaultValue="followedRaffles" />
+    </fragment>
+    <fragment
+        android:id="@+id/raffleCardDetailFragment"
+        android:name="com.kimkazandi.ui.raffleCardDetail.RaffleCardDetailFragment"
+        android:label="@string/raffle_card_detail_label_text"
+        tools:layout="@layout/fragment_raffle_card_detail" />
+</navigation>
